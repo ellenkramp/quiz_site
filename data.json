@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "prompt": "Which of the following vacation destinations sounds most appealing to you?",
+      "choices": [
+        {
+          "name": "The Bahamas",
+          "description": "I want to relax in the sun and sand",
+          "value": 1
+        },
+        {
+          "name": "Yosemite Park",
+          "description": "I like being out in nature",
+          "value": 2
+        },
+        {
+          "name": "Paris",
+          "description": "I enjoy indulging in cultural delicassies, art, fine food and wine",
+          "value": 3
+        },
+        {
+          "name": "Thailand",
+          "description": "When it comes to travel, I seek out new and different people and cultures",
+          "value": 4
+        },
+        {
+          "name": "All of the above",
+          "description": "I'd be happy just getting out of the house",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "prompt": "What best describes your work style?",
+      "choices": [
+        {
+          "name": "Get r' done",
+          "value": 1
+        },
+        {
+          "name": "Work hard, play hard",
+          "value": 2
+        },
+        {
+          "name": "Work ",
+          "value": 3
+        },
+        {
+          "name": "Strategize and optimize",
+          "value": 4
+        },
+        {
+          "name": "Live and let live",
+          "value": 0
+        }
+      ]
+    }
+  ]
+}
