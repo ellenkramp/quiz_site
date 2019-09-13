@@ -2,13 +2,13 @@ import React from "react";
 import { TestContextConsumer } from '../providers';
 import Layout from '../components/layout';
 import Choice from '../components/radiobuttons';
-import { ButtonStyled, Choices, Question, QuestionBox, QuizPage } from '../../styles';
+import { ButtonStyled, Choices, Question, QuestionBox, QuizPage, ButtonLink } from '../../styles';
 
 export default () => {
   return (
     <Layout>
       <TestContextConsumer>
-        {({ currentIndex, updateQuestion, currentQuestion }) => {
+        {({ currentIndex, updateQuestion, currentQuestion, totalQuestions }) => {
           return (
             <div>
               <QuizPage>
@@ -19,7 +19,7 @@ export default () => {
                   </Choices>
                 </QuestionBox>
               </QuizPage>
-              <ButtonStyled onClick={updateQuestion}>Next</ButtonStyled>
+              {currentIndex < (totalQuestions - 1) ? <ButtonStyled onClick={updateQuestion}>Next</ButtonStyled> : <ButtonLink to="/results"><ButtonStyled>See My Results!</ButtonStyled></ButtonLink>}
             </div>
           )
         }}

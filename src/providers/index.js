@@ -10,10 +10,10 @@ export const TestContextConsumer = TestContext.Consumer;
 export default (props) => {
   const [quizTotal, setQuizTotal] = useState(0);
   const [currentIndex, setIndex] = useState(0);
+  const totalQuestions = data.questions.length;
   const currentQuestion = data.questions[currentIndex || 0];
 
   const updateQuestion = () => {
-
     setIndex(currentIndex + 1);
     return;
   }
@@ -22,7 +22,7 @@ export default (props) => {
     return;
   }
   return (
-    <TestContextProvider value={{ quizTotal, currentIndex, updateQuestion, updateTotal, currentQuestion }}>
+    <TestContextProvider value={{ totalQuestions, quizTotal, currentIndex, updateQuestion, updateTotal, currentQuestion }}>
       {props.children}
     </TestContextProvider>
   )
