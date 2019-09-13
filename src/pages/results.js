@@ -1,9 +1,12 @@
 import React from "react"
 import Layout from '../components/layout';
-import { Body } from '../../styles';
+import { Body, ButtonStyled, ButtonLink, Question } from '../../styles';
 
 export default () => <Layout>
   <Body>
-    Your results are in!
+    <Question>
+      Your results are in!
+    </Question>
+    <ButtonLink to="/"><ButtonStyled>Home</ButtonStyled></ButtonLink>
   </Body>
 </Layout>

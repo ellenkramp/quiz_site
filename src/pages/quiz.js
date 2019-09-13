@@ -1,8 +1,8 @@
 import React from "react";
 import { TestContextConsumer } from '../providers';
 import Layout from '../components/layout';
-import Choice from '../components/radiobuttons';
-import { ButtonStyled, Choices, Question, QuestionBox, QuizPage, ButtonLink } from '../../styles';
+import Choices from '../components/radiobuttons';
+import { ButtonStyled, ChoiceContainer, Question, QuestionBox, QuizPage, ButtonLink } from '../../styles';
 
 export default () => {
   return (
@@ -14,12 +14,12 @@ export default () => {
               <QuizPage>
                 <QuestionBox key={currentQuestion.prompt}>
                   <Question>{currentQuestion.prompt}</Question>
-                  <Choices>
-                    <Choice />
-                  </Choices>
+                  <ChoiceContainer>
+                    <Choices />
+                  </ChoiceContainer>
                 </QuestionBox>
+                {currentIndex < (totalQuestions - 1) ? <ButtonStyled variant="text" onClick={updateQuestion}>Next -></ButtonStyled> : <ButtonLink to="/results"><ButtonStyled>See My Results!</ButtonStyled></ButtonLink>}
               </QuizPage>
-              {currentIndex < (totalQuestions - 1) ? <ButtonStyled onClick={updateQuestion}>Next</ButtonStyled> : <ButtonLink to="/results"><ButtonStyled>See My Results!</ButtonStyled></ButtonLink>}
             </div>
           )
         }}
