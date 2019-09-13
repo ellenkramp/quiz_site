@@ -1,13 +1,12 @@
 import React from 'react';
-import { TestContextConsumer } from '../providers/tracker';
+import { TestContextConsumer } from '../providers';
 import Radio from '@material-ui/core/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import { FormLabelText, RadioGroupText } from '../../styles';
-import data from '../../data.json';
 
 
-export default ({ choices }) => {
+export default () => {
   const [value, setValue] = React.useState('');
 
   const handleEvent = (event) => {
@@ -17,9 +16,8 @@ export default ({ choices }) => {
   return (
     <div>
       <TestContextConsumer>
-        {({ currentIndex }) => {
-          const choices = data.questions[currentIndex].choices;
-          console.log(choices);
+        {({ currentQuestion }) => {
+          const choices = currentQuestion && currentQuestion.choices;
           return (
             <div>
               <FormControl component="fieldset">

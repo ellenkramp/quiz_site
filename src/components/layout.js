@@ -1,18 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './header';
-import { TestContextProvider } from '../providers/tracker';
+import TestContextProvider from '../providers';
 
 export default (props) => {
-  const [quizTotal, setQuizTotal] = useState(0);
-  const [currentIndex, setIndex] = useState(0);
-
-  const updateQuestion = () => {
-    setIndex(currentIndex + 1);
-    // setQuizTotal(quizTotal + 1);
-  }
   return (
     <div>
-      <TestContextProvider value={{ quizTotal, currentIndex, updateQuestion }}>
+      <TestContextProvider>
         <Header />
         {props.children}
       </TestContextProvider>
