@@ -1,9 +1,13 @@
 import React from "react"
-// import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import { Body, ButtonLink, ButtonStyled } from '../../styles';
 
-export default () => <Layout>Hello world!</Layout>
-
-/// <Link to="/page name" ></Link>
-
-//layout component parent with props.children for header/footer
+export default () => {
+  return (
+    <Layout>
+      <Body>
+        <ButtonLink to="/quiz"><ButtonStyled>Start the Quiz</ButtonStyled></ButtonLink>
+      </Body>
+    </Layout>
+  )
+}
