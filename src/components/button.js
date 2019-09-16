@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonStyled, ButtonLink } from '../../styles';
 
 export default ({ props }) => {
-  const { handleNext, handleSubmit, currentIndex, totalQuestions } = props;
+  const { handleNext, handleSubmit, currentIndex, totalQuestions, totalPoints } = props;
   let Button;
   const lastQuestion = (currentIndex === (totalQuestions - 1));
 
@@ -15,7 +15,7 @@ export default ({ props }) => {
   }
   if (lastQuestion) {
     Button = () => (
-      <ButtonLink to="/results"><ButtonStyled onClick={handleSubmit}>See My Results!</ButtonStyled></ButtonLink>
+      <ButtonStyled onClick={handleSubmit}>See My Results!</ButtonStyled>
     );
   }
   return <Button />

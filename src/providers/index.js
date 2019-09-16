@@ -15,13 +15,15 @@ export default (props) => {
   const [currentPointValue, setCurrentPointValue] = useState(0);
 
   const handleNext = () => {
+    setIndex(currentIndex + 1);
     const newNum = currentPointValue + totalPoints;
     setTotalPoints(newNum);
-    setIndex(currentIndex + 1);
+    setCurrentPointValue(0);
   }
   const handleSubmit = () => {
     const newNum = currentPointValue + totalPoints;
     setTotalPoints(newNum);
+    setIndex(currentIndex + 1);
   }
 
   return (

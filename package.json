@@ -19,6 +19,7 @@
     "cypress": "^3.4.1",
     "gatsby": "^2.15.9",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-layout": "^1.1.7",
     "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-sass": "^2.1.13",
