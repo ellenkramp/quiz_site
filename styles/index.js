@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, FormLabel, RadioGroup } from '@material-ui/core';
+import { Card, RadioGroup } from '@material-ui/core';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
@@ -14,7 +14,7 @@ export const Question = styled.div`
 export const QuestionBox = styled(Card) `
   height: 50vh;
   width: 50vw;
-  padding: 20px;
+  padding: 25px;
   border-radius: 3;
   font-family: 'Comfortaa', sans-serif;
 `;
@@ -24,7 +24,7 @@ export const QuizPage = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 `;
 
 export const ChoiceContainer = styled.div`
