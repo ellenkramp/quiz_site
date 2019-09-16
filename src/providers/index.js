@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { navigate } from 'gatsby';
 import data from '../../data.json';
 
 export const TestContext = React.createContext(0);
@@ -15,45 +14,25 @@ export default (props) => {
   const [totalPoints, setTotalPoints] = useState(0);
   const [currentPointValue, setCurrentPointValue] = useState(0);
 
-  const updateCount = () => {
-    setTotalPoints(currentPointValue + totalPoints);
-    console.log("updatedTotal", totalPoints)
-  }
-
-  const resetCurrentPointValue = () => {
-    setCurrentPointValue(-1);
-    console.log(currentPointValue);
-  }
-
-  const updateQuestion = () => {
-    setIndex(currentIndex + 1);
-    return;
-  }
-
   const handleNext = () => {
-    const newNum = () => currentPointValue + totalPoints;
+    const newNum = currentPointValue + totalPoints;
     setTotalPoints(newNum);
-    return updateQuestion();
+    setIndex(currentIndex + 1);
   }
   const handleSubmit = () => {
     const newNum = currentPointValue + totalPoints;
-    setTotalPoints(newNum)
-      .then(navigate('/results', {
-        state: { newNum },
-      }));
+    setTotalPoints(newNum);
   }
 
   return (
     <TestContextProvider value={{
       currentQuestion,
-      updateQuestion,
       currentIndex,
-      setIndex,
       totalQuestions,
       totalPoints,
       setTotalPoints,
-      currentPointValue,
       setCurrentPointValue,
+      currentPointValue,
       handleNext,
       handleSubmit
     }}>

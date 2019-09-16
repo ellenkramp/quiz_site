@@ -1,5 +1,4 @@
 import React from "react";
-import { navigate } from 'gatsby';
 import { TestContextConsumer } from '../providers';
 import Button from '../components/button';
 import Layout from '../components/layout';
@@ -10,10 +9,10 @@ export default () => {
   return (
     <Layout>
       <TestContextConsumer>
-        {({ currentIndex, updateQuestion, currentQuestion, totalQuestions, handleNext, handleSubmit }) =>
+        {({ currentIndex, currentQuestion, totalQuestions, handleNext, handleSubmit }) =>
           <div>
             <QuizPage>
-              <QuestionBox key={currentQuestion.prompt}>
+              <QuestionBox key={console.log(currentQuestion)}>
                 <Question>{currentQuestion.prompt}</Question>
                 <ChoiceContainer>
                   <Choices />

@@ -1,6 +1,5 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import { HeaderText, HeaderContent, Patronus } from '../../styles';
 import Unicorn from '../../public/unicorn.png';
 
