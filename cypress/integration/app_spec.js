@@ -1,3 +1,15 @@
+import data from '../../data.json';
+
+describe('Data', function () {
+  it('contains 10 questions', function () {
+    expect(data.questions.length).to.eql(10);
+  })
+  it('contains 5 results', function () {
+    const results = Object.keys(data.results);
+    expect(results.length).to.eql(5);
+  })
+})
+
 describe('The Home Page', function () {
   it('successfully loads', function () {
     cy.visit('/');

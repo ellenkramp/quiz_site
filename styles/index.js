@@ -34,6 +34,10 @@ export const ChoiceContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const Result = styled.h1`
+  font-family: 'Pacifico', 'san-serif';
+`;
+
 export const HeaderText = styled.h1`
   color: white;
   font-family: 'Pacifico', 'san-serif';
@@ -77,6 +81,13 @@ export const Body = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+export const BodyText = styled.div`
+  display: flex;
+  font-family: inherit;
+  max-width: 500px;
+  text-align: center;
+  font-size: 20px;
+`;
 
 export const FormLabelText = styled.p`
   color: gray;
@@ -87,5 +98,22 @@ export const FormLabelText = styled.p`
 
 export const RadioGroupText = styled(RadioGroup) `
   color: black;
+`;
+
+export const ResultsHeader = styled.div`
+  font-weight: bold;
+  font-size: 21px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-family: 'Comfortaa', sans-serif;
+`;
+
+export const ResultsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Comfortaa', sans-serif;
+  align-items: center;
+  margin: 50px;
 `;
 

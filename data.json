@@ -42,7 +42,7 @@
           "points": 3
         },
         {
-          "name": "Work ",
+          "name": "Make a name for myself",
           "points": 4
         },
         {
@@ -54,6 +54,219 @@
           "points": 1
         }
       ]
+    },
+    {
+      "prompt": "Which famous developer do you admire most?",
+      "choices": [
+        {
+          "name": "Bill Gates",
+          "points": 2
+        },
+        {
+          "name": "Mark Zuckerberg",
+          "points": 3
+        },
+        {
+          "name": "Guido van Rossom",
+          "points": 4
+        },
+        {
+          "name": "Dan Abramov",
+          "points": 5
+        },
+        {
+          "name": "My College Professor",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "prompt": "People often tell you you're...",
+      "choices": [
+        {
+          "name": "Kind",
+          "points": 2
+        },
+        {
+          "name": "Dedicated",
+          "points": 3
+        },
+        {
+          "name": "Sophisticated",
+          "points": 4
+        },
+        {
+          "name": "Clever",
+          "points": 5
+        },
+        {
+          "name": "Open-minded",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "prompt": "When you run into a bug, you try to fix it by:",
+      "choices": [
+        {
+          "name": "Coming back to it later",
+          "points": 2
+        },
+        {
+          "name": "Trying anything and everything",
+          "points": 3
+        },
+        {
+          "name": "Asking for help on Slack",
+          "points": 4
+        },
+        {
+          "name": "Searching Stack Overflow",
+          "points": 5
+        },
+        {
+          "name": "Giving up and moving on to the next ticket",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "prompt": "The reason you got into development was...",
+      "choices": [
+        {
+          "name": "An interest in technology",
+          "points": 2
+        },
+        {
+          "name": "To earn a high wage",
+          "points": 3
+        },
+        {
+          "name": "To collaborate with others on groundbreaking projects",
+          "points": 4
+        },
+        {
+          "name": "To gain a sense of fulfillment through problem-solving",
+          "points": 5
+        },
+        {
+          "name": "To be creative",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "prompt": "Your mother always said:",
+      "choices": [
+        {
+          "name": "Do your best",
+          "points": 2
+        },
+        {
+          "name": "Don't lose",
+          "points": 3
+        },
+        {
+          "name": "Stand out",
+          "points": 4
+        },
+        {
+          "name": "Use your head",
+          "points": 5
+        },
+        {
+          "name": "Be yourself",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "prompt": "The types of companies that you enjoy working for are...",
+      "choices": [
+        {
+          "name": "Well-established, large, and secure",
+          "points": 2
+        },
+        {
+          "name": "High-growth and fast-moving",
+          "points": 3
+        },
+        {
+          "name": "Reputable and distinguished",
+          "points": 4
+        },
+        {
+          "name": "Cutting-edge and innovative",
+          "points": 5
+        },
+        {
+          "name": "Laid back and friendly",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "prompt": "Which of the following app ideas interests you most?",
+      "choices": [
+        {
+          "name": "Finance Plus",
+          "description": "An app to manage your money",
+          "points": 2
+        },
+        {
+          "name": "On the Move",
+          "description": "An app for increased productivity",
+          "points": 3
+        },
+        {
+          "name": "Travel Companion",
+          "description": "An app to find the best places to visit while traveling",
+          "points": 4
+        },
+        {
+          "name": "Magic Quest",
+          "description": "A game app where you progress through a medieval forest",
+          "points": 5
+        },
+        {
+          "name": "Kitty Boop",
+          "description": "A game where you work to boop other cats",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "prompt": "If I weren't a software developer, I'd:",
+      "choices": [
+        {
+          "name": "Be a teacher/professor",
+          "points": 2
+        },
+        {
+          "name": "Run my own business",
+          "points": 3
+        },
+        {
+          "name": "Be a writer",
+          "points": 4
+        },
+        {
+          "name": "Work as another type of engineer",
+          "description": "mechanical, electrical, etc.",
+          "points": 5
+        },
+        {
+          "name": "Live with my parents",
+          "points": 1
+        }
+      ]
     }
-  ]
+  ],
+  "results": {
+    "Dog": "Your are loyal to your friends, your family, and your company. As a developer your plan is to get into a company early and work your way up. Through hard work and dedication you will achieve longterm success. ",
+    "Bear": "You are aggressive about your goals and will stop at nothing to get what you're after. When it comes to work, you expect a lot out of a company, but you give a lot in exchange. Your ultra-focused mindset and driven personality put you on the fast track to achieving new heights quickly.",
+    "Peacock": "You aim to stand out. You don't want to blend in with the crowd, so you make many efforts to ensure that your peers admire your unique approach to life, and software development. Always keen on shiny new technologies, you impress your coworkers regularly by breaking out a new technique.",
+    "Monkey": "You are incredibly agile. Your mind is adept to quick problem-solving and it's something you enjoy about what you do. In any given jungle of code, you can somehow always navigate your way to an efficient and elogant solution.",
+    "Sloth": "You like to take it easy. You enjoy what you do, but you don't want to push yourself too hard. Life's about enjoying the simple things, and sometimes that's sleeping. But, on occasion, you write some code as well."
+  }
 }
