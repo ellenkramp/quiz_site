@@ -5,8 +5,8 @@ import TestContextProvider from '../providers';
 export default (props) => {
   return (
     <div>
+      <Header />
       <TestContextProvider>
-        <Header />
         {props.children}
       </TestContextProvider>
     </div>

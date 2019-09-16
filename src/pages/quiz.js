@@ -1,15 +1,17 @@
 import React from "react";
+import { navigate } from 'gatsby';
 import { TestContextConsumer } from '../providers';
+import Button from '../components/button';
 import Layout from '../components/layout';
 import Choices from '../components/radiobuttons';
-import { ButtonStyled, ChoiceContainer, Question, QuestionBox, QuizPage, ButtonLink } from '../../styles';
+import { ChoiceContainer, Question, QuestionBox, QuizPage } from '../../styles';
 
 export default () => {
   return (
     <Layout>
       <TestContextConsumer>
-        {({ currentIndex, updateQuestion, currentQuestion, totalQuestions }) => {
-          return (
+        {({ currentIndex, updateQuestion, currentQuestion, totalQuestions, handleNext, handleSubmit }) =>
+          (
             <div>
               <QuizPage>
                 <QuestionBox key={currentQuestion.prompt}>
@@ -18,11 +20,11 @@ export default () => {
                     <Choices />
                   </ChoiceContainer>
                 </QuestionBox>
-                {currentIndex < (totalQuestions - 1) ? <ButtonStyled variant="text" onClick={updateQuestion}>Next -></ButtonStyled> : <ButtonLink to="/results"><ButtonStyled>See My Results!</ButtonStyled></ButtonLink>}
+                <Button props={{ currentIndex, totalQuestions, handleNext, handleSubmit }} />
               </QuizPage>
             </div>
           )
-        }}
+        }
       </TestContextConsumer>
     </Layout>);
 }

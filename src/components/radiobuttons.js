@@ -7,29 +7,25 @@ import { FormLabelText, RadioGroupText } from '../../styles';
 
 
 export default () => {
-  const [value, setValue] = React.useState('');
-
-  const handleEvent = (event) => {
-    setValue(event.target.value);
-  }
-
   return (
     <div>
       <TestContextConsumer>
-        {({ currentQuestion }) => {
+        {({ currentQuestion, setCurrentPointValue, currentPointValue }) => {
           const choices = currentQuestion && currentQuestion.choices;
           return (
             <div>
               <FormControl component="fieldset">
-                <RadioGroupText value={value} onChange={handleEvent}>
-                  {choices.map(choice => (
-                    <div key={choice.name}>
-                      <FormControlLabel
-                        value={choice.value}
-                        control={<Radio />}
-                        label={choice.name} />
-                      <FormLabelText component="legend">{choice.description}</FormLabelText>
-                    </div>))}
+                <RadioGroupText value={currentPointValue} onChange={(e) => setCurrentPointValue(parseInt(e.target.value))}>
+                  {choices.map(choice => {
+                    return (
+                      <div key={choice.name}>
+                        <FormControlLabel
+                          value={choice.points}
+                          control={<Radio />}
+                          label={choice.name} />
+                        <FormLabelText component="legend">{choice.description}</FormLabelText>
+                      </div>)
+                  })}
                 </RadioGroupText>
               </FormControl>
             </div>

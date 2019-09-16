@@ -5,9 +5,9 @@ import { Link } from 'gatsby';
 
 export const Question = styled.div`
   font-weight: bold;
-  font-size: 30px;
-  padding-bottom: 15px;
-  align-self: center;
+  font-size: 21px;
+  padding-bottom: 5px;
+  text-align: left;
   font-family: 'Comfortaa', sans-serif;
 `;
 
@@ -20,13 +20,11 @@ export const QuestionBox = styled(Card) `
 `;
 
 export const QuizPage = styled.div`
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin-top: 50px;
 `;
 
 export const ChoiceContainer = styled.div`
@@ -41,7 +39,6 @@ export const HeaderText = styled.h1`
   font-family: 'Pacifico', 'san-serif';
   font-size: 45px;
   font-weight: 100;
-  text-align: center;
 `;
 
 export const HeaderContent = styled.div`
@@ -58,7 +55,7 @@ export const Patronus = styled.img`
   align-self: flex-end;
 `;
 
-export const ButtonLink = styled(Link) `
+export const ButtonLink = styled(props => <Link {...props} />) `
   text-decoration: none;
   align-self: center;
 `;
