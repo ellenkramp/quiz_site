@@ -78,8 +78,11 @@ export const Body = styled.div`
   justify-content: center;
 `;
 
-export const FormLabelText = styled(FormLabel) `
-  color: black;
+export const FormLabelText = styled.p`
+  color: gray;
+  margin: 0;
+  padding-left: 30px;
+  font-size: 14px;
 `;
 
 export const RadioGroupText = styled(RadioGroup) `
