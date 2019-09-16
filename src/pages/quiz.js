@@ -11,19 +11,17 @@ export default () => {
     <Layout>
       <TestContextConsumer>
         {({ currentIndex, updateQuestion, currentQuestion, totalQuestions, handleNext, handleSubmit }) =>
-          (
-            <div>
-              <QuizPage>
-                <QuestionBox key={currentQuestion.prompt}>
-                  <Question>{currentQuestion.prompt}</Question>
-                  <ChoiceContainer>
-                    <Choices />
-                  </ChoiceContainer>
-                </QuestionBox>
-                <Button props={{ currentIndex, totalQuestions, handleNext, handleSubmit }} />
-              </QuizPage>
-            </div>
-          )
+          <div>
+            <QuizPage>
+              <QuestionBox key={currentQuestion.prompt}>
+                <Question>{currentQuestion.prompt}</Question>
+                <ChoiceContainer>
+                  <Choices />
+                </ChoiceContainer>
+              </QuestionBox>
+              <Button props={{ currentIndex, totalQuestions, handleNext, handleSubmit }} />
+            </QuizPage>
+          </div>
         }
       </TestContextConsumer>
     </Layout>);
