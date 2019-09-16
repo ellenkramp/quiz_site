@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import { HeaderText, HeaderContent, Patronus } from '../../styles';
-import Unicorn from '../../public/unicorn.png';
+import Unicorn from '../assets/unicorn.png';
 
 export default function ButtonAppBar() {
 

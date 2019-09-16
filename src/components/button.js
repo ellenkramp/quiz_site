@@ -1,8 +1,8 @@
 import React from "react";
-import { ButtonStyled, ButtonLink } from '../../styles';
+import { ButtonStyled } from '../../styles';
 
 export default ({ props }) => {
-  const { handleNext, handleSubmit, currentIndex, totalQuestions, totalPoints } = props;
+  const { handleNext, handleSubmit, currentIndex, totalQuestions } = props;
   let Button;
   const lastQuestion = (currentIndex === (totalQuestions - 1));
 

@@ -1,6 +1,5 @@
 import React from "react"
-import Layout from '../components/layout';
-import { Body, ButtonStyled, ButtonLink, Question } from '../../styles';
+import { ButtonStyled, ButtonLink, Question } from '../../styles';
 
 export default ({ totalPoints }) =>
   <div>
